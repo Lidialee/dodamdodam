@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_popup_leg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="머리 증상"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/feverHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn=" 열 "
+                android:textOff=" 열 "
+                android:textColor="#696969"
+                android:textSize="8pt"/>
+
+            <ToggleButton
+                android:id="@+id/scratchHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="상처"
+                android:textOff="상처"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/painHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="두통"
+                android:textOff="두통"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/skinHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="피부"
+                android:textOff="피부"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="열을 입력해주세요"
+            android:layout_margin="5dp"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:id="@+id/line9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ToggleButton
+                android:id="@+id/redHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textColor="#696969"
+                android:textOff="붉어짐"
+                android:textOn="붉어짐"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pusHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textColor="#696969"
+                android:textOff="뾰루지"
+                android:textOn="뾰루지"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pruritusHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textColor="#696969"
+                android:textOff="가려움"
+                android:textOn="가려움"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/furuncleHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textColor="#696969"
+                android:textOff="각질"
+                android:textOn="각질"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/ear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="귀"
+                android:textOn="귀"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="눈"
+                android:textOn="눈"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/nose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="코"
+                android:textOn="코"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/mouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="입"
+                android:textOn="입"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="left"
+            android:id="@+id/line5">
+
+            <ToggleButton
+                android:id="@+id/tinnitus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="이명"
+                android:textOff="이명"
+                android:textColor="#696969"
+                android:textSize="6pt"/>
+
+            <ToggleButton
+                android:id="@+id/earache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="귀앓이"
+                android:textOff="귀앓이"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/hyperemia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="충혈"
+                android:textOn="충혈"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pruritusEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="가려움"
+                android:textOn="가려움"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/snot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="콧물"
+                android:textOn="콧물"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/nasalObstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="코막힘"
+                android:textOn="코막힘"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/toothache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="치통"
+                android:textOn="치통"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/coldSore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="부르틈"
+                android:textOn="부르틈"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#696969" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="치료"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/headPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="치료 경과를 입력해주세요"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/endHead"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/allround_button"
+            android:text="등록하기"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+</RelativeLayout>

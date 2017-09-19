@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wehe_1">현재 BMI지수는 </string>
+    <string name="wehe_1_1">이고 </string>
+    <string name="wehe_2">표준보다 몸무게는 </string>
+    <string name="wehe_3">키는</string>
+    <string name="wehe_4">% 더 무겁습니다(큽니다)</string>
+    <string name="wehe_5">% 더 말랐습니다(작습니다)</string>
+
+    <string name="daydiff1">오늘의 일교차는 </string>
+    <string name="dayfiff2">입니다.</string>
+    <string name="dayfiff3"> 일교차 큽니다. 옷차림에 주의해주세요</string>
+
+    <string name="mise1">오늘의 미세먼지는 </string>
+    <string name="mise2">단계입니다 </string>
+    <string name="mise_alert2">실외활동시 특별히 행동에 제약을 받을 필요는 없지만 몸상태에 따라 유의하여 활동</string>
+    <string name="mise_alert3">장시간 또는 무리한 실외활동 제한, 특히 천식인 경우 각별한 주의</string>
+    <string name="mise_alert4">가급적 살내활동, 실외 활동시 의사와 상의</string>
+
+    <string name="sun1">오늘의 자외선지수는 </string>
+    <string name="sun_alert1">보호조치가 필요하지 않음/햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함 </string>
+    <string name="sun_alert2">2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음 </string>
+    <string name="sun_alert3">햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함 </string>
+    <string name="sun_alert4">햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함  </string>
+    <string name="sun_alert5">햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함 가능한 실내에 머물러야 함 </string>
+
+    <string name="food">오늘의 식중독는 </string>
+    <string name="food_alert1">식중독 발생가능성은 낮으나 식중독 예방에 지속적인 관심이 요망됨</string>
+    <string name="food_alert2">식중독 발생가능성이 중간 단계이므로 식중독예방에 주의가 요망됨</string>
+    <string name="food_alert3">식중독 발생가능성이 높으므로 식중독 예방에 경계가 요망됨  </string>
+    <string name="food_alert4">식중독 발생가능성이 매우 높으므로 식중독 예방에 각별한 경계가 요망됨   </string>
+
+    <string name="skin">오늘의 피부질환지수는 </string>
+    <string name="skin_alert1">피부질환 환자들은 지속적인 관심 요망</string>
+    <string name="skin_alert2">피부질환 환자들은 주의 요망</string>
+    <string name="skin_alert3">실내온도와 습도를 일정하게 유지하고 충분한 수분 섭취하기  </string>
+    <string name="skin_alert4">실외활동은 가급적 자제하고 쾌적한 환경 유지하기 /피부질환 환자들은 각별한 주의 요망 </string>
+
+
+
+
+
+
+</resources>

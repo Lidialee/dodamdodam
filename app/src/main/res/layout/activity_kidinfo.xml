@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_kidinfo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/editIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/editing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/gradient"/>
+
+            <TextView
+                android:id="@+id/kidInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ff6e57"
+                android:padding="8dp"
+                android:text="아이 정보"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20pt" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/man" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/kidName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="김철수"
+                                android:textAlignment="viewEnd"
+                                android:textColor="#000000"
+                                android:textSize="13pt" />
+
+                            <TextView
+                                android:id="@+id/kidBirth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="생년월"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/kidGrowth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="키, 몸무게"
+                            android:textAlignment="center"
+                            android:textColor="#696969"
+                            android:textSize="13pt" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kidVaccineList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/black_box_button"
+                    android:text="예방 접종 기록"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13pt" />
+
+                <Button
+                    android:id="@+id/kidGrowthGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/black_box_button"
+                    android:text="성장과정 그래프"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allergyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="알러지"
+                        android:textColor="#000000"
+                        android:textSize="10pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/allergy1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="난류"
+                            android:textOn="난류" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="유제품"
+                            android:textOn="유제품" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="콩류"
+                            android:textOn="콩류" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/allergy4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="견과류"
+                            android:textOn="견과류" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="밀가루"
+                            android:textOn="밀가루" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy6"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="갑각류"
+                            android:textOn="갑각류" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/allergy7"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="육류"
+                            android:textOn="육류" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy8"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="해산물"
+                            android:textOn="해산물" />
+
+                        <ToggleButton
+                            android:id="@+id/allergy9"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="과일류"
+                            android:textOn="과일류" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/allergyname7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 육류 "
+                            android:textColor="#000000"
+                            android:textSize="8pt" />
+
+                        <EditText
+                            android:id="@+id/allergyplus7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:clickable="false"
+                            android:text="육류 종류" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/allergyname8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="해산물"
+                            android:textColor="#000000"
+                            android:textSize="8pt" />
+
+                        <EditText
+                            android:id="@+id/allergyplus8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:clickable="false"
+                            android:text="해산물 종류" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/allergyname9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="과일류"
+                            android:textColor="#000000"
+                            android:textSize="8pt" />
+
+                        <EditText
+                            android:id="@+id/allergyplus9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="과일류 종류" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/illnessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="주의 질환"
+                        android:textColor="#000000"
+                        android:textSize="10pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/illness1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="비염"
+                            android:textOn="비염" />
+
+                        <ToggleButton
+                            android:id="@+id/illness2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="눈병"
+                            android:textOn="눈병" />
+
+                        <ToggleButton
+                            android:id="@+id/illness3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="천식"
+                            android:textOn="천식" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/illness4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="소화기\n장애"
+                            android:textOn="소화기\n장애" />
+
+                        <ToggleButton
+                            android:id="@+id/illness5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="피부병"
+                            android:textOn="피부병" />
+
+                        <ToggleButton
+                            android:id="@+id/illness6"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gray_box_button"
+                            android:textColor="#696969"
+                            android:clickable="false"
+                            android:textOff="빈혈"
+                            android:textOn="빈혈" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/explainIllness1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textColor="#696969"
+                            android:text="위/장" />
+
+                        <TextView
+                            android:id="@+id/explainIllness2"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:textAlignment="center"
+                            android:textSize="8dp"
+                            android:textColor="#696969"
+                            android:text="아토피/두드러기/피부염" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="5dp"
+                            android:layout_margin="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/etcName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="기타 주의 사항"
+                        android:textColor="#000000"
+                        android:textSize="10pt" />
+
+                    <EditText
+                        android:id="@+id/etcText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="50"
+                        android:textColor="#696969"
+                        android:clickable="false"
+                        android:textSize="8pt"
+                        android:layout_marginBottom="15dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/KidInfoEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/allround_button"
+                    android:text="수정 완료"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13pt" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

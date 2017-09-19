@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="손 증상"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/painHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="통증"
+                android:textOff="통증"
+                android:textColor="#696969"
+                android:textSize="8pt"/>
+
+            <ToggleButton
+                android:id="@+id/fractureHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="골절"
+                android:textOff="골절"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/scratchHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="상처"
+                android:textOff="상처"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/skinHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="피부"
+                android:textOff="피부"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff=" 손 "
+                android:textOn=" 손 "
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/wrist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="손목"
+                android:textOn="손목"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/shoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="어깨"
+                android:textOn="어깨"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/limb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff=" 팔 "
+                android:textOn=" 팔 "
+                android:textColor="#696969"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:id="@+id/line2">
+
+            <ToggleButton
+                android:id="@+id/redHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="붉어짐"
+                android:textOn="붉어짐"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pusHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="뾰루지"
+                android:textOn="뾰루지"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pruritusHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="가려움"
+                android:textOn="가려움"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/furuncleHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="각질"
+                android:textOn="각질"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#696969" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="치료"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/handPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="치료 경과를 입력해주세요"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/endHand"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/allround_button"
+            android:text="등록하기"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+</RelativeLayout>

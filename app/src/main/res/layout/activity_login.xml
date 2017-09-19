@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/center_image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dodamicon"/>
+
+    <!--이메일 부분-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_edit_layout"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/center_image">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_edit_text"
+            android:inputType="textEmailAddress"
+            android:hint="id" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!--패스워드 부분-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_edit_layout"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/id_edit_layout">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_edit_text"
+            android:inputType="numberPassword"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!--로그인 버튼-->
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/usual_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="로그인"
+        android:textSize="10pt"
+        android:textColor="@color/font"
+        android:background="@drawable/login_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/password_edit_layout"
+        android:layout_alignStart="@+id/register_button" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_button"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/usual_login"
+        android:layout_centerInParent="true"
+        android:text="회원가입"
+        android:textSize="10pt"
+        android:textColor="@color/font"
+        android:background="@drawable/login_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/com_kakao_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/register_button" />
+
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_popup_leg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="다리 증상"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/painLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="통증"
+                android:textOff="통증"
+                android:textColor="#696969"
+                android:textSize="8pt"/>
+
+            <ToggleButton
+                android:id="@+id/fractureLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="골절"
+                android:textOff="골절"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/scratchLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="상처"
+                android:textOff="상처"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+
+            <ToggleButton
+                android:id="@+id/skinLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="피부"
+                android:textOff="피부"
+                android:textColor="#696969"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/line3">
+
+            <ToggleButton
+                android:id="@+id/toe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn=" 발 "
+                android:textOff=" 발 "
+                android:textColor="#696969"
+                android:textSize="6pt"/>
+
+            <ToggleButton
+                android:id="@+id/ankle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="발목"
+                android:textOff="발목"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pelvis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="골반"
+                android:textOff="골반"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/leg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/gray_box_button"
+                android:textOn="다리"
+                android:textOff="다리"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ToggleButton
+                android:id="@+id/redLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="붉어짐"
+                android:textOn="붉어짐"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pusLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="뾰루지"
+                android:textOn="뾰루지"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/pruritusLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="가려움"
+                android:textOn="가려움"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+
+            <ToggleButton
+                android:id="@+id/furuncleLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_box_button"
+                android:padding="5dp"
+                android:textOff="각질"
+                android:textOn="각질"
+                android:textColor="#696969"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#696969" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="치료"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/legPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="치료 경과를 입력해주세요"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/endLeg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/allround_button"
+            android:text="등록하기"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "814929007850",
+    "firebase_url": "https://dodam-e4619.firebaseio.com",
+    "project_id": "dodam-e4619",
+    "storage_bucket": "dodam-e4619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814929007850:android:54c04c077f761334",
+        "android_client_info": {
+          "package_name": "cc.foxtail.new_version"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814929007850-5feqq51rj7g71nr72kuvsoa0j0btphpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa-ls6XjC641BW2D5hX9c-xDbOMDg6z0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
